@@ -112,31 +112,4 @@ def fetch_pse( bool_push ) :
 
 		else :
 			return [ "No Data to Process" ]
-
-# def main(argv):
-# 	try:
-# 		args = getopt.getopt( argv , "hx" )
-# 	except getopt.GetoptError:
-# 		print (f"""
-# 			PSEFetch
-# 				-x debug_mode
-# 		""")
-# 		sys.exit(2)
-# 	for arg in args:
-# 		if arg == '-h':
-# 			print (f"""
-# 			PSEFetch
-# 				-x debug_mode
-# 			""")
-# 			sys.exit()
-# 		elif arg == '-x':
-# 			debug_mode = True
-
-
-# if __name__ == '__main__' :
-# 	main( sys.argv[1:] )
-
-with open( logfile , "a" ) as logfile :
-	logfile.write( mdy_hms + " : " + fetch_pse( True )[0] +  "\n" )
-
 	
